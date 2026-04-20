@@ -1,1 +1,8 @@
 # Understanding-IEEE-754-Floating-Point-Numbers
+1. ConvertDecimals.java - This class take in a decimal value and convert it to the binary value of it. It also specifies the components such as sign, exponent and fraction parts of the binary number.
+2. ArithmeticOperation.java - This class perform the two arithmetic operations 0.1+0.2 and 1.0/3.0 and returns the normal and binary values of the result. I observed from the program that the result isn't exactly right because the number 0.1+0.2 and 1/3 can't be represented exactly using binary, so Java stores the closest approximate values in binary instead.
+3. SpecialValuesHandling.java - This class takes in three values: positive infinity, negative infinity and not a number, see how java displays them and their binary values, and checks (returns true or false) if Java recognizes them as psoitive infinity, negative infinity and nan.
+4. Rounding.java - This class sees different types of rounding in Java round a number.
+5. UnderflowAndOverflow.java - This class takes in a number that is too big to store and displays it as infitity, a number that is too small to store and displays it as 0.0, the class also returns the binary values of the numbers respectively.
+6. PrecisionLoss.java - This class takes in a very small value and shows that after an operation, this very small value can lose precision since the results display diferent decimal points.
+7. The difference is how Java and Python handles special numbers such as positive infinity, negative infinity, /0.0 operations or not a number. While Java can recognizes it as what it is and gives the binary values for it (like how I explained in 3), Python usually crashes the program when meeting this values and raises and error.
